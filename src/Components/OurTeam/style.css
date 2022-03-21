@@ -1,0 +1,129 @@
+.team-card {
+  /* box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); */
+  /* border: 1px solid #dddddd; */
+  background: #202231;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 1rem; */
+  width: 100%;
+  /* padding: 1.5rem 1rem 1rem; */
+  border-radius: 1rem;
+  /* min-height: 450px !important; */
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.team-image {
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  padding: 3px;
+  width: 100px !important;
+  height: 100px !important;
+  /* margin-bottom: 0.5rem; */
+}
+
+/* .team-name {
+  font-size: 1.5rem;
+  color: yellow;
+} */
+.team-designation {
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 0.6rem;
+}
+.col-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-list {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.linkedIn-icon {
+  width: 2rem !important;
+  height: auto;
+}
+
+.linkedIn-icon:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #a3a9a4);
+}
+
+.card {
+  border: 0px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 450px) {
+  .team-card {
+    display: flex;
+    /* // flex-direction: row; */
+    width: 100%;
+    padding: 1.5rem 1rem 1rem;
+    border-radius: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-team {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+}
+
+@media screen and (min-width: 451px) and(max-width: 768px) {
+  .team-card {
+    display: flex;
+    /* // flex-direction: row; */
+    width: 80%;
+    /* padding: 1.5rem 1rem 1rem; */
+    border-radius: 1rem;
+  }
+  .col-team {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .team-card {
+    display: flex;
+    width: 100%;
+    /* padding: 1.5rem 1rem 1rem; */
+    border-radius: 1rem;
+  }
+  .col-team {
+    flex-direction: row;
+    align-items: center;
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .team-card {
+    width: 100%;
+    padding: 1.5rem 1rem 1rem;
+    /* border-radius: 1rem; */
+    min-height: 450px !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team-card {
+    /* min-height: 560px !important; */
+    
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .team-card {
+    min-height: 450px !important;
+  }
+}

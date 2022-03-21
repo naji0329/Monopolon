@@ -1,0 +1,1042 @@
+.NavbarWrapper {
+  padding: 10px;
+  background: url('./assets/Nav-Background.png');
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 88888;
+
+  .LogoContainer {
+    .Logo {
+      width: 70px;
+      height: auto;
+    }
+  }
+
+  .NavItemsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .StarImage {
+      
+    }
+
+    .Navitem {
+      color: #fff;
+      margin: 0 1rem;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #3ebbeb;
+        transform-origin: left;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover {
+        color: #3ebbeb;
+        cursor: pointer;
+      }
+      &:hover:after {
+        color: #3ebbeb;
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
+
+.WelcomeSectionWrapper {
+  background-image: url('./assets/welcomeSectionBackground.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 10rem 10rem 10rem 25rem;
+  text-align: left;
+
+  h1 {
+    font-size: 88px;
+    font-family: 'Sarpanch', sans-serif;
+    color: white;
+  }
+
+  .welcome-button-group {
+    display: flex; 
+    justify-content: left;
+    margin-top: 80px;
+    .wel-button {
+      cursor: pointer;
+      background-image: url('./assets/ConnBtnBG.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 35px 55px 35px 55px;
+      margin-right: 40px;
+      
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+
+      color: #FFFFFF;
+    }
+  }
+}
+
+.DesciptionSectionWrapper {
+  background-image: url('./assets/DescriptionSectionBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5rem 0 0rem 0;
+
+  .Group_arrow {
+    width: 100%;
+    text-align: left;
+    margin-left: -30px;
+    margin-bottom: -50px;
+  }
+
+  .DescriptionContainer {
+    .DescriptionHeading {
+      font-family: 'Sarpanch';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 67px;
+      
+      color: #FFFFFF;
+    }
+  
+    .DescriptionContent {
+      margin-top: 1rem;   
+      color: white;
+      font-size: 20px;
+      line-height: 30px;
+      width: 50%;
+      margin: auto;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+
+  
+  .Frame_5 {
+    width: 100%;
+    text-align: right;
+    margin-right: -30px;
+    margin-top: -250px;
+  }
+}
+
+.MlonSectionWrapper {
+  background-image: url('./assets/MlonBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .MlonContainer {
+    display: flex;
+    flex-direction: row;
+    // position: absolute;
+    width: 80%;
+    left: 0; 
+    right: 0; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto; 
+    margin-right: auto; 
+    align-items: center;
+    justify-content: space-evenly;
+
+    .MlonToken {
+      width: 25%;
+      height: auto;
+    }
+
+    .TokenInfoWrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      color: white;
+      width: 60%;
+
+      .MlonHeading {
+        font-size: 48px;
+        font-family: 'Sarpanch', sans-serif;
+        font-weight: 800;
+      }
+
+      .MlonDescription {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.CollectionWrapper {
+  background-image: url('./assets/CollectionBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5rem 5rem 5rem 5rem;
+
+  h1 {
+    color: white;
+    font-family: Sarpanch;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .Control-Image-Group {
+    display: flex;
+    justify-content: right;
+
+    img {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .Items-Group {
+    margin-top: 50px;
+    
+    .Collection_item {
+      background-image: url('./assets/CollectionItemBG.png');
+      background-size: 100% 100%;
+      padding: 50px 30px 30px 30px;
+      max-width: 400px;
+
+      img {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+      }
+
+      p {
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        color: white;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.RoadmapContainer {
+  background-image: url('./assets/RoadmapBG.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  padding: 50px;
+      
+  background-color: #000000;
+  
+  // transform: matrix(1, 0, 0, -1, 0, 0);
+
+  .Frame_line{
+    position: absolute;
+    left: 0;
+    top: -40px;
+  }
+
+  h1 {
+    font-family: Sarpanch;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+
+  .RoadmapItems {
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+    .left {
+      width: 50%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-right: 2px solid #00FFFF;
+
+      .itemDiv {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: right;
+
+        .line {
+          border-right: 2px solid #00FFFF;
+          border-bottom: 2px solid #00FFFF;
+          border-bottom-right-radius: 30px;
+          width: 50px;
+          margin-bottom: 50px;
+          margin-right: -2px;
+        }
+  
+        .RoadmapItem1 {
+          background-image: url('./assets/RoadmapItem.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          // max-width: 100%;
+          text-align: left;
+          align-items: left;
+          padding: 40px 30px 50px 30px;
+    
+          .title {
+            font-family: Sarpanch;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #2AE7ED;
+          }
+  
+          .comment {
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #9BCFE5;
+          }
+        }
+
+      }
+    }
+
+    .right {
+      width: 50%;
+      padding-top: 250px;
+      padding-bottom: 50px;
+
+      .itemDiv {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: left;
+        
+        .line {
+          border-left: 2px solid #00FFFF;
+          border-bottom: 2px solid #00FFFF;
+          border-bottom-left-radius: 30px;
+          width: 50px;
+          margin-bottom: 50px;
+          margin-left: -2px;
+        }
+  
+        .RoadmapItem1 {
+          background-image: url('./assets/RoadmapItem.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          // max-width: 100%;
+          text-align: left;
+          align-items: left;
+          padding: 40px 30px 50px 30px;
+    
+          .title {
+            font-family: Sarpanch;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #2AE7ED;
+          }
+  
+          .comment {
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #9BCFE5;
+          }
+        }
+
+      }
+    }
+  }
+
+  .mb {
+    display: none;
+  }
+}
+
+.DocumentSectionContainer {
+  background-image: url('./assets/PartnersBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+
+  .Content {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+    .PartnersHeading {
+      font-family:'Sarpanch', sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      color: #ffffff;
+    }
+
+    .PartnersWrapper {
+      img {
+        margin-top: 40px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+.BlueSectionContainer {
+  background-image: url('./assets/blueBG.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+
+  .container {
+
+    h1 {
+      font-family: Sarpanch;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67px;
+      letter-spacing: 0em;
+      color: white;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #2AE7ED;
+    }
+  }
+}
+
+.PreRegistrationSection {
+  background-image: url('./assets/DescriptionSectionBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+  text-align: center;
+
+  .PreRegistrationBackgroundImage {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    
+    .FrameImage {
+      width: 20%;
+      height: auto;
+    }
+    .PreRegistrationButtonImage {
+      width: 275px;
+      margin-left: 30px;
+      margin-right: 30px;
+      height: auto;
+    }
+  }
+}
+
+
+.footerWrapper {
+  background-image: url('./assets/marc-olivier-jodoin-NqOInJ-ttqM-unsplash 3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+  text-align: center;
+
+  .left_div {
+    text-align: left;
+
+    .Mlogo {
+      width: 100px;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: white;
+      max-width: 350px;
+    }
+
+    .social_links {
+      margin-top: 20px;
+      img {
+        margin-right: 10px;
+      }
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
+  .contact_links {
+    margin-top: 100px;
+    h3 {
+      font-family: Sarpanch;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+
+.OurTeamSectionWrapper {
+  background-image: url('./assets/TeamBG.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+  position: relative;
+
+  .Team_layouttop {
+    position: absolute;
+    max-width: 400px;
+    top: 0;
+    right: 0;
+  }
+  
+  .Team_layoutBottom {
+    position: absolute;
+    bottom: 0;
+    max-width: 400px;
+    left: 0;
+  }
+  
+  .OurTeamSection {
+    // position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    .OurTeamHeading {
+      font-family: 'Sarpanch', sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      color: white;
+    }
+
+    .team-card-item {
+      background-image: url('./assets/CollectionItemBG.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding: 40px 20px 40px 30px;
+      color: white;
+      max-width: 450px;
+
+      .MemberName {
+        font-size: 24px;
+        margin-top: 10px;
+        color: white;
+        font-weight: 700;
+        text-align: left;
+        margin: 0px !important;
+      }
+      div{
+        text-align: left;
+
+        .MemberDesignation {
+          color: #ffffff;
+          margin-bottom: 1rem;
+          background-color: #159be2;
+          padding: 2px 15px;
+          border-radius: 15px;
+          font-size: 14px;
+          width: 200px;
+        }
+      }
+
+      .IntroListContainer {
+        margin-top: 10px;
+        .IntroList {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.contactMeWrapper {
+  background-image: url('./assets/ContactMe.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+
+  .item_div {
+    background-image: url('./assets/CollectionItemBG.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+
+    p {
+      margin-top: 15px;
+      color: white;
+      font-family: Sarpanch;
+      font-size: 16px;
+
+    }
+    h1 {
+      color: white;
+      font-family: Sarpanch;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 67px;
+      letter-spacing: 0em;
+      text-align: center;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .WelcomeSectionWrapper {
+    padding: 2rem 0 2rem 2rem;
+    background-image: url('./assets/welcomeSectionBackground.png');
+    background-size: 120% auto;
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .welcome-button-group {
+      margin-top: 10px;
+
+      .wel-button {
+        padding: 15px 25px 15px 25px;
+        margin-right: 20px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .NavbarWrapper {
+    justify-content: left;
+    padding-left: 40px;
+  
+    .LogoContainer {
+      .Logo {
+        width: 50px;
+      }
+    }
+    .NavItemsWrapper {
+      display: none;
+    }
+  }
+   
+  .DesciptionSectionWrapper {
+    padding: 2rem 0 0rem 0;
+
+    .Group_arrow {
+      margin-bottom: 0px;
+      img {
+        height: 30px;
+      }
+    }
+
+    .DescriptionContainer {
+      z-index: 100;
+
+      .DescriptionHeading {
+        font-size: 24px;
+        line-height: 40px;
+      }
+    
+      .DescriptionContent {
+        margin-top: 0rem;   
+        font-size: 12px;
+        line-height: 15px;
+        width: 100%;
+      }
+    }
+
+    
+    .Frame_5 {
+      margin-top: -70px;
+      img {
+        height: 100px;
+      }
+    }
+  }
+  
+  .MlonSectionWrapper {
+    .MlonContainer {
+      width: 100%;
+      align-items: flex-start;
+      margin-bottom: 0px;
+
+      .MlonToken {
+        width: 25%;
+        height: auto;
+      }
+
+      .TokenInfoWrapper {
+        .MlonHeading {
+          font-size: 24px;
+        }
+
+        .MlonDescription {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .CollectionWrapper {
+    padding: 3rem 3rem 3rem 3rem;
+  
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .Control-Image-Group {
+      margin-top: -50px;
+    }
+  
+    .Items-Group {
+
+      .Collection_item {
+        p {
+          font-family: Poppins;
+          font-size: 16px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+
+  .RoadmapContainer {
+    background-image: url('./assets/RoadmapBG.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+    padding: 50px 20px 50px 20px;
+
+    .Frame_line{
+      width: 200px;
+      top: -20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .pc {
+      display: none;
+    }
+
+    .mb {
+      display: block;
+    }
+    
+    .RoadmapItems {
+      width: 100%;
+      margin: auto;
+      
+      .itemDiv {
+        display: flex;
+        justify-content: right;
+        border-left: 2px solid #00FFFF;
+
+        .leftline {
+          border-left: 2px solid #00FFFF;
+          border-bottom: 2px solid #00FFFF;
+          border-bottom-left-radius: 30px;
+          width: 50px !important;
+          margin-bottom: 80px;
+          margin-left: -2px;
+        }
+  
+        .RoadmapItem1 {
+          background-image: url('./assets/RoadmapItem.png');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          // max-width: 100%;
+          text-align: left;
+          align-items: left;
+          padding: 40px 30px 50px 30px;
+    
+          .title {
+            font-family: Sarpanch;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #2AE7ED;
+            padding: 0%;
+          }
+  
+          .comment {
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #9BCFE5;
+          }
+        }
+
+      }
+    }
+  }
+
+  .DocumentSectionContainer {
+    padding: 40px;
+  
+    .Content {
+  
+      .PartnersHeading {
+        font-size: 24px;
+      }
+  
+      .PartnersWrapper {
+        img {
+          margin-top: 20px;
+          height: 70px;
+        }
+      }
+    }
+  }
+  
+  .BlueSectionContainer {
+    padding: 40px 10px 20px 10px;
+
+    .container {
+
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 12px; 
+        line-height: 18px;
+      }
+    }
+  }
+
+  .PreRegistrationSection {
+    background-size: 100% 100%;
+    padding: 20px;
+    text-align: center;
+
+    .PreRegistrationBackgroundImage {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      
+      .FrameImage {
+        width: 20%;
+        height: auto;
+      }
+      .PreRegistrationButtonImage {
+        width: 133px;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: auto;
+      }
+    }
+  }
+
+  .footerWrapper {
+    background-size: auto 100%;
+    padding: 20px;
+    text-align: center;
+  
+    .left_div {
+      text-align: left;
+  
+      .Mlogo {
+        width: 100px;
+      }
+  
+      p {
+        font-size: 12px;
+        line-height: 17px;
+      }
+  
+      .social_links {
+        margin-top: 0px;
+        margin-left: 20px;
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      span {
+        margin-top: 0px;
+        margin-left: 20px;
+      }
+      margin-bottom: 0px;
+    }
+  
+    .contact_links {
+      margin-top: 0px;
+      padding: 20px;
+      h3 {
+        font-family: Sarpanch;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+      }
+      p {
+        padding: 0;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+
+  
+  .OurTeamSectionWrapper {
+    padding: 30px;
+
+    .Team_layouttop {
+      height: 200px;
+    }
+    
+    .Team_layoutBottom {
+      height: 200px;
+    }
+    
+    .OurTeamSection {
+      .OurTeamHeading {
+        margin-top: 30px;
+        font-size: 24px;  
+      }
+
+      .team-card-item {
+
+        .MemberName {
+          font-size: 16px;
+          margin-top: 0px;
+          padding: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        
+        div{
+          text-align: left;
+
+          .MemberDesignation {
+            margin: 0;  
+          }
+        }
+
+        .IntroListContainer {
+          .IntroList {
+            font-size: 14px;
+            padding: 0;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  
+  .contactMeWrapper {
+    background-image: url('./assets/ContactMe.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 30px;
+
+    .item_div {
+      background-image: url('./assets/CollectionItemBG.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+
+      p {
+        margin-top: 15px;
+        padding: 0;
+      }
+      h1 {
+        font-size: 24px;
+        line-height: 40px;
+      }
+
+    }
+
+  }
+}

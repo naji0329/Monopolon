@@ -1,0 +1,59 @@
+{
+  "name": "monopolon-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.4.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.17",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "i18next": "^21.6.5",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.3",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.3",
+    "swiper": "^6.8.0-beta.1",
+    "typescript": "^4.5.4",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/react-slick": "^0.23.8",
+    "@types/styled-components": "^5.1.19"
+  }
+}
