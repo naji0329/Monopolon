@@ -7,6 +7,7 @@ import Progress from '../../assets/in-progress.png';
 import InQueue from '../../assets/In-queue.png';
 import Completed from '../../assets/Completed.png';
 import Fade from 'react-reveal/Fade';
+import { Trans } from "react-i18next";
 
 interface RoadmapProps {
   t?: any;
@@ -79,7 +80,7 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
     <>
     <div className='RoadmapContainer'>
         <img src={Frame_line} alt="" className='Frame_line' />
-        <h1>Roadmap</h1>
+        <h1><Trans i18nKey="Roadmap"/></h1>
         <div className='RoadmapItems pc'>
             <div className='left'>
                 <div className='itemDiv'>
@@ -87,12 +88,12 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                     <div className='RoadmapItem1'>
                         <p className='title'>MAR 2022</p>
                         <span className='comment'>
-                            • More Teaser & Previews to be launched <br/>
-                            • Onboarding of Influencers <br/>
-                            • Increasing Media PR on Details of Monopolon and Its Gamification <br/>
-                            • Email and Video Marketing <br/>
-                            • Liasing for Strategic Partnership <br/>
-                            • Airdrops, Bounty & Contests <br/>
+                            • <Trans i18nKey="More Teaser & Previews to be launched"/> <br/>
+                            • <Trans i18nKey="Onboarding of Influencers"/> <br/>
+                            • <Trans i18nKey="Increasing Media PR on Details of Monopolon and Its Gamification"/> <br/>
+                            • <Trans i18nKey="Email and Video Marketing"/> <br/>
+                            • <Trans i18nKey="Liasing for Strategic Partnership"/> <br/>
+                            • <Trans i18nKey="Airdrops, Bounty & Contests"/> <br/>
                         </span>
                     </div>
                     <div className='line'></div>
@@ -102,13 +103,12 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                     <div className='RoadmapItem1'>
                         <p className='title'>MAY 2022</p>
                         <span className='comment'>
-                            • Official Launch of Monopolon  <br/>
-                            • Launch of P2P Marketplace  <br/>
-                            • Listing of MGM on PancakeSwap  <br/>
-                            • High Yield Farming with Gamification (Dice Roll)  <br/>
-                            • PR Blasting on Monopolon launch  <br/>
-                            • Enhance Influencer Marketing & Advertising 
-
+                            • <Trans i18nKey="Official Launch of Monopolon"/> <br/>
+                            • <Trans i18nKey="Launch of P2P Marketplace"/> <br/>
+                            • <Trans i18nKey="Listing of MGM on PancakeSwap"/> <br/>
+                            • <Trans i18nKey="High Yield Farming with Gamification (Dice Roll)"/> <br/>
+                            • <Trans i18nKey="PR Blasting on Monopolon launch"/> <br/>
+                            • <Trans i18nKey="Enhance Influencer Marketing & Advertising"/>
                         </span>
                     </div>
                     <div className='line'></div>
@@ -120,9 +120,9 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                     <div className='RoadmapItem1'>
                         <p className='title'>APR 2022</p>
                         <span className='comment'>
-                            • Beta Testing of Monopolon <br/>
-                            • More Previews Towards Coming Launch <br/>
-                            • Public Pre-Sales for Market Outreach (IDO Platform) 
+                            • <Trans i18nKey="Beta Testing of Monopolon"/> <br/>
+                            • <Trans i18nKey="More Previews Towards Coming Launch"/> <br/>
+                            • <Trans i18nKey="Public Pre-Sales for Market Outreach (IDO Platform)"/>
                         </span>
                     </div>
                 </div>
@@ -131,11 +131,10 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                     <div className='RoadmapItem1'>
                         <p className='title'>JUN 2022</p>
                         <span className='comment'>
-                            • Collaboration AMA Sessions <br/>
-                            • Increased Influencer Marketing Strategies <br/>
-                            • SEM on Crypto and Defi related sites <br/>
-                            • More Airdrops and Contests events <br/>
-
+                            • <Trans i18nKey="Collaboration AMA Sessions"/> <br/>
+                            • <Trans i18nKey="Increased Influencer Marketing Strategies"/> <br/>
+                            • <Trans i18nKey="SEM on Crypto and Defi related sites"/> <br/>
+                            • <Trans i18nKey="More Airdrops and Contests events"/>
                         </span>
                     </div>
                 </div>
@@ -149,12 +148,12 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                 <div className='RoadmapItem1'>
                     <p className='title'>MAR 2022</p>
                     <span className='comment'>
-                        • More Teaser & Previews to be launched <br/>
-                        • Onboarding of Influencers <br/>
-                        • Increasing Media PR on Details of Monopolon and Its Gamification <br/>
-                        • Email and Video Marketing <br/>
-                        • Liasing for Strategic Partnership <br/>
-                        • Airdrops, Bounty & Contests <br/>
+                        • <Trans i18nKey="More Teaser & Previews to be launched"/> <br/>
+                        • <Trans i18nKey="Onboarding of Influencers"/> <br/>
+                        • <Trans i18nKey="Increasing Media PR on Details of Monopolon and Its Gamification"/> <br/>
+                        • <Trans i18nKey="Email and Video Marketing"/> <br/>
+                        • <Trans i18nKey="Liasing for Strategic Partnership"/> <br/>
+                        • <Trans i18nKey="Airdrops, Bounty & Contests"/> <br/>
                     </span>
                 </div>
             </div>
@@ -163,9 +162,9 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                 <div className='RoadmapItem1'>
                     <p className='title'>APR 2022</p>
                     <span className='comment'>
-                        • Beta Testing of Monopolon <br/>
-                        • More Previews Towards Coming Launch <br/>
-                        • Public Pre-Sales for Market Outreach (IDO Platform) 
+                        • <Trans i18nKey="Beta Testing of Monopolon"/> <br/>
+                        • <Trans i18nKey="More Previews Towards Coming Launch"/> <br/>
+                        • <Trans i18nKey="Public Pre-Sales for Market Outreach (IDO Platform)"/>
                     </span>
                 </div>
             </div>
@@ -174,12 +173,12 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                 <div className='RoadmapItem1'>
                     <p className='title'>MAY 2022</p>
                     <span className='comment'>
-                        • Official Launch of Monopolon  <br/>
-                        • Launch of P2P Marketplace  <br/>
-                        • Listing of MGM on PancakeSwap  <br/>
-                        • High Yield Farming with Gamification (Dice Roll)  <br/>
-                        • PR Blasting on Monopolon launch  <br/>
-                        • Enhance Influencer Marketing & Advertising 
+                        • <Trans i18nKey="Official Launch of Monopolon"/> <br/>
+                        • <Trans i18nKey="Launch of P2P Marketplace"/> <br/>
+                        • <Trans i18nKey="Listing of MGM on PancakeSwap"/> <br/>
+                        • <Trans i18nKey="High Yield Farming with Gamification (Dice Roll)"/> <br/>
+                        • <Trans i18nKey="PR Blasting on Monopolon launch"/> <br/>
+                        • <Trans i18nKey="Enhance Influencer Marketing & Advertising"/>
 
                     </span>
                 </div>
@@ -189,11 +188,10 @@ export const Roadmap: React.FC<RoadmapProps> = ({ t }) => {
                 <div className='RoadmapItem1'>
                     <p className='title'>JUN 2022</p>
                     <span className='comment'>
-                        • Collaboration AMA Sessions <br/>
-                        • Increased Influencer Marketing Strategies <br/>
-                        • SEM on Crypto and Defi related sites <br/>
-                        • More Airdrops and Contests events <br/>
-
+                        • <Trans i18nKey="Collaboration AMA Sessions"/> <br/>
+                        • <Trans i18nKey="Increased Influencer Marketing Strategies"/> <br/>
+                        • <Trans i18nKey="SEM on Crypto and Defi related sites"/> <br/>
+                        • <Trans i18nKey="More Airdrops and Contests events"/>
                     </span>
                 </div>
             </div>

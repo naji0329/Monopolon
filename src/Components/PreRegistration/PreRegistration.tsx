@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Trans } from "react-i18next";
 import {
   PreRegistrationBackground,
   PreRegistrationButton,
@@ -43,24 +44,12 @@ export const PreRegistration: React.FC<PreRegistrationProps> = ({ t }) => {
     <div className='PreRegistrationSection'>
       <div className='PreRegistrationBackgroundImage'>
         <img src={LeftFrame} alt="" className='FrameImage' />
-        <img src={PreRegistrationButton} alt="" className='PreRegistrationButtonImage' />
+        <div className='PreRegistrationButtonImage'>
+          <Trans i18nKey="Pre-Registration"/>
+        </div>
         <img src={RightFrame} alt="" className='FrameImage' />
       </div>
     </div>
-      {/* <PreRegistrationSection>
-        <PreRegistrationBackgroundImage
-          src={PreRegistrationBackground}
-          alt="Pre Registration"
-        />
-        <PreRegistrationContainer>
-          <FrameImage src={LeftFrame} alt="Left Frame" />
-          <PreRegistrationButtonImage
-            src={PreRegistrationButton}
-            alt="Pre Registration"
-          />
-          <FrameImage src={RightFrame} alt=" Right Frame  " />
-        </PreRegistrationContainer>
-      </PreRegistrationSection> */}
     </>
   );
 };

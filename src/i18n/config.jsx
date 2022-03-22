@@ -11,6 +11,12 @@ i18next.init({
     },
     jp: {
       translations: require('../languages/japanese/translations.json')
+    },
+    ko: {
+      translations: require('../languages/korean/translations.json')
+    },
+    th: {
+      translations: require('../languages/thai/translations.json')
     }
   },
   ns: ['translations'],

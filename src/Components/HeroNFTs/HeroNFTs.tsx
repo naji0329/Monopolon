@@ -1,28 +1,11 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/swiper.min.css';
-import 'swiper/components/pagination/pagination.min.css';
-import 'swiper/components/navigation/navigation.min.css';
-
 import Slider from "react-slick";
 
-import { Col, Container, Row } from 'react-bootstrap';
-import Gif from '../../assets/NFTs/Eden Mask.gif';
-import Sword from '../../assets/NFTs/Sword GIF.gif';
-import Gun from '../../assets/NFTs/Bitcoin Gun GIF.gif';
-// import Character2 from '../../assets/NFTs/characterII.png';
 import Charactor1 from '../../assets/Charactor1.png';
 import Charactor2 from '../../assets/Charactor2.png';
 import Charactor3 from '../../assets/Charactor3.png';
-import Dice from '../../assets/NFTs/dice.png';
-import Dice2 from '../../assets/NFTs/dice2.jpg';
-import Grid1 from '../../assets/NFTs/Grid1.jpg';
-import Grid2 from '../../assets/NFTs/Grid_2.png';
 import SwiperCore, { Pagination, Autoplay, Navigation } from 'swiper';
-import NftImage from '../NftImage/NftImage';
-import styled from 'styled-components';
-import { CollectionBackground, arrow_left, arrow_right } from '../../assets';
+import { Trans } from "react-i18next";
 
 SwiperCore.use([Pagination, Autoplay, Navigation]);
 
@@ -73,36 +56,32 @@ export const HeroNFTs: React.FC<HeroNFTsProps> = ({ t }) => {
   return (
     <>
       <div className='CollectionWrapper'>
-        <h1>Collections</h1>
-        {/* <div className='Control-Image-Group'>
-          <img src={arrow_left} alt='' className='Collection-Control slick-arrow slick-prev'/>
-          <img src={arrow_right} alt='' className='Collection-Control slick-arrow slick-next'/>
-        </div> */}
+        <h1><Trans i18nKey="Collections"/></h1>
         <div className='Items-Group'>
           <Slider {...settings_team}  className="slider-images mt-5">
             <div className="Collection_item">
               <img src={Charactor1} alt='' />
-              <p>Character1</p>
+              <p><Trans i18nKey="Futuristic Tome of Social"/></p>
             </div>
             <div className="Collection_item">
               <img src={Charactor2} alt='' />
-              <p>Character2</p>
+              <p><Trans i18nKey="Flash Dragon Sword"/></p>
             </div>
             <div className="Collection_item">
               <img src={Charactor3} alt='' />
-              <p>Character3</p>
+              <p><Trans i18nKey="Rocket of Trollheim"/></p>
             </div>
             <div className="Collection_item">
               <img src={Charactor1} alt='' />
-              <p>Character1</p>
+              <p><Trans i18nKey="Futuristic Tome of Social"/></p>
             </div>
             <div className="Collection_item">
               <img src={Charactor2} alt='' />
-              <p>Character2</p>
+              <p><Trans i18nKey="Flash Dragon Sword"/></p>
             </div>
             <div className="Collection_item">
               <img src={Charactor3} alt='' />
-              <p>Character3</p>
+              <p><Trans i18nKey="Rocket of Trollheim"/></p>
             </div>
           </Slider>
         </div>

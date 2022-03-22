@@ -49,6 +49,30 @@
         transform: scaleX(1);
         transform-origin: left;
       }
+
+      .select {
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border: none;
+
+        &:focus {
+          border: none;
+        }
+        &:active {
+          border: none;
+        }
+        &:checked {
+          border: none;
+        }
+        &:visited {
+          border: none;
+        }
+
+        option {
+          background-color: #000000;
+        }
+      }
     }
   }
 }
@@ -454,16 +478,25 @@
     width: 100%;
     height: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     .FrameImage {
       width: 20%;
-      height: auto;
     }
     .PreRegistrationButtonImage {
+      background-image: url('./assets/ConnBtnBG.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 35px 50px 35px 50px;
       width: 275px;
+      font-size: 20px;
       margin-left: 30px;
       margin-right: 30px;
       height: auto;
+
+      color: white;
     }
   }
 }
@@ -498,6 +531,8 @@
     .social_links {
       margin-top: 20px;
       img {
+        height: 19px;
+        width: 19px;
         margin-right: 10px;
       }
       margin-bottom: 20px;
@@ -624,7 +659,8 @@
     margin: auto;
 
     p {
-      margin-top: 15px;
+      margin: 15px auto ;
+      padding: 0;
       color: white;
       font-family: Sarpanch;
       font-size: 16px;
@@ -896,10 +932,12 @@
         height: auto;
       }
       .PreRegistrationButtonImage {
-        width: 133px;
-        margin-left: 30px;
-        margin-right: 30px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
         height: auto;
+        padding: 15px 20px 15px 20px;
+        font-size: 14px;
       }
     }
   }
@@ -1014,26 +1052,16 @@
 
   
   .contactMeWrapper {
-    background-image: url('./assets/ContactMe.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 30px;
+    padding: 20px;
 
     .item_div {
-      background-image: url('./assets/CollectionItemBG.png');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      padding: 20px;
-      max-width: 400px;
-      margin: auto;
 
       p {
-        margin-top: 15px;
-        padding: 0;
+        font-size: 12px;
       }
       h1 {
         font-size: 24px;
-        line-height: 40px;
+        line-height: 30px;
       }
 
     }

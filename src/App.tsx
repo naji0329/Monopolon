@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from "react-i18next";
 import { withTrans } from './i18n/withTranslations';
 import './App.css';
 import './my.scss';
@@ -23,7 +23,7 @@ import SplitText from './Components/SplitText';
 // import { ComingSoon } from "./Components/ComingSoon/ComingSoon";
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -49,7 +49,7 @@ function App() {
         </>
       ) : (
         <>
-          <NavbarContainer />
+          <NavbarContainer  />
           <WelcomeSection t={t} />
           <DescriptionSection t={t} />
           {/* <VideoSection t={t} /> */}
@@ -69,3 +69,4 @@ function App() {
 }
 
 export default withTrans(App);
+// export default App;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import TwitterIcon from "../../assets/SocialIcons/twitter.png";
 import DiscordIcon from "../../assets/SocialIcons/discord.png";
 import TelegramIcon from "../../assets/SocialIcons/telegram.png";
-import Git  from '../../assets/SocialIcons/git.svg'
+import Git from "../../assets/SocialIcons/git.svg";
 import Logo from "../../assets/Logo/IMG_5601.png";
 import MLogo from "../../assets/MLogo.png";
 
@@ -11,111 +11,26 @@ import facebook from "../../assets/facebook.png";
 import tiktok from "../../assets/tiktok.png";
 import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
-
-import { Col, Container, Row } from "react-bootstrap";
+import reddit from "../../assets/reddit.png"
+import medium from "../../assets/medium.png"
+import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./style.css";
-import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 interface FooterProps {
   t?: any;
 }
 
-const socialHandles = [
-  {
-    icon: TwitterIcon,
-    name: "Twitter",
-    url: "https://twitter.com/monopolondefi",
-  },
-  {
-    icon: DiscordIcon,
-    name: "Discord",
-    url: "https://discord.com/invite/EEgVMFAsXY",
-  },
-  {
-    icon: TelegramIcon,
-    name: "Telegram",
-    url: "https://t.me/Monopolon",
-  },
-  // {
-  //   icon: Git,
-  //   name: "Telegram",
-  //   url: "https://discord.com/invite/EEgVMFAsXY",
-  // },
-];
-
-const FooterContainer = styled.section`
-  // background: linear-gradient(
-  //     356deg,
-  //     rgba(97, 39, 91, 1) 0%,
-  //     rgba(9, 9, 121, 1) 50%,
-  //     rgba(90, 62, 135, 1) 100%
-  //   );
-  background: rgb(22 21 34);
-  color: white;
-  padding: 4rem 2rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`;
-const FooterDescriptionSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const FooterText = styled.span`
-  color: white;
-  font-weight: 700;
-  font-size: 2rem;
-
-  @media screen and (max-width: 450px) {
-    font-size: 1.5rem;
-  }
-`;
-const SocialIconsSection = styled.div`
-  margin: 2rem 0;
-  display: flex;
-  @media screen and (max-width: 450px) {
-    margin: 1rem 0;
-  }
-`;
-const SocialIconsAnchor = styled.a`
-  margin: 0.3rem;
-
-  &:hover {
-    filter: drop-shadow(0 0 4px black);
-  }
-`;
-const SocialIcons = styled.img`
-  width: 40px;
-  height: auto;
-  &:hover {
-    transform: scale(1.1, 1.1);
-  }
-
-  @media screen and (max-width: 450px) {
-    width: 25px;
-  }
-`;
-
-const Discrption = styled.p`
-   {
-    display: flex;
-  }
-`;
-interface NavbarProps {
-  t?: any;
-}
 
 export const Footer: React.FC<FooterProps> = ({ t }) => {
-  const { i18n } = useTranslation();
- 
+
   return (
     <>
       <div className="contactMeWrapper">
         <div className="item_div">
-          <p>Monopolondefi@gmail.com</p>
-          <h1>Contact Us</h1>
+          <p>contact@monopolon.io</p>
+          <h1><Trans i18nKey="Contact Us"/></h1>
         </div>
       </div>
 
@@ -123,40 +38,42 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
         <Row>
           <Col sm="12" md="6" className="left_div">
             <img src={MLogo} alt="Mlogo" className="Mlogo" />
-            <p>Monopolon is the home of DeFi. Our community is building a comprehensive, decentralized trading platform for the future of finance. Join us!</p>
+            <p><Trans i18nKey="Monopolon is the home of DeFi. Our community is building a comprehensive, decentralized trading platform for the future of finance. Join us!"/></p>
 
             <div className="social_links">
-              <img src={facebook} alt="" />
-              <img src={twitter} alt="" />
-              <img src={instagram} alt="" />
-              <img src={tiktok} alt="" />
+              <a href="https://discord.gg/wegGXKKXkW" target="_blank"><img src={DiscordIcon} alt="" /></a>
+              <a href="https://twitter.com/monopolondefi" target="_blank"><img src={twitter} alt="" /></a>
+              <a href="https://t.me/monopolon" target="_blank"><img src={TelegramIcon} alt="" /></a>
+              <a href="https://www.reddit.com/r/monopolon" target="_blank"><img src={reddit} alt="" /></a>
+              <a href="https://monopolon.medium.com/" target="_blank"><img src={medium} alt="" /></a>
+              <a href="https://instagram.com/monopolondefi" target="_blank"><img src={instagram} alt="" /></a>
             </div>
 
-            <span className="mt-4" >Copyright 2022</span>
+            <span className="mt-4"><Trans i18nKey="Copyright"/> 2022</span>
           </Col>
-          <Col sm="12" md="6" >
+          <Col sm="12" md="6">
             <Row className="text-light contact_links">
               <Col xs="6" sm="3">
-                <h3>ABOUT</h3>
-                <p>About</p>
-                <p>Terms</p>
-                <p>Legal</p>
+                <h3><Trans i18nKey="ABOUT"/></h3>
+                <p><Trans i18nKey="About"/></p>
+                <p><Trans i18nKey="Terms"/></p>
+                <p><Trans i18nKey="Legal"/></p>
               </Col>
               <Col xs="6" sm="3">
-                <h3>NFT</h3>
-                <p>OpenSea</p>
-                <p>Maker</p>
-                <p>Learn</p>
+                <h3><Trans i18nKey="NFT"/></h3>
+                <p><Trans i18nKey="OpenSea"/></p>
+                <p><Trans i18nKey="Maker"/></p>
+                <p><Trans i18nKey="Learn"/></p>
               </Col>
               <Col xs="6" sm="3">
-                <h3>Contact</h3>
-                <p>Press</p>
-                <p>Support</p>
+                <h3><Trans i18nKey="Contact"/></h3>
+                <p><Trans i18nKey="Press"/></p>
+                <p><Trans i18nKey="Support"/></p>
               </Col>
               <Col xs="6" sm="3">
-                <h3>Social</h3>
-                <p>Twitter</p>
-                <p>Instagram</p>
+                <h3><Trans i18nKey="Social"/></h3>
+                <p><Trans i18nKey="Twitter"/></p>
+                <p><Trans i18nKey="Instagram"/></p>
               </Col>
             </Row>
           </Col>
